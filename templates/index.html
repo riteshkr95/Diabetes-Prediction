@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px; background-color:black;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color:gray;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+        
+    
+    <h2 style="color:white;"><Center>Diabetes Prediction</Center></h2>
+    <form action="/predict" method="POST">
+        <!--label for="Pegnancies">Pregnancies:</label-->
+        <input type="number" id="Pregnancies" name="Pregnancies" placeholder="Enter here Pregnancy Level" required>
+
+        <!--label for="Glucose">Glucose:</label-->
+        <input type="number" id="Glucose" name="Glucose" placeholder="Enter your Glucose Level" required>
+
+        <!--label for="BloodPressure">BloodPressure:</label-->
+        <input type="number" id="BloodPressure" name="BloodPressure" placeholder="Enter your BloodPressure" required>
+
+
+
+        <!--label for="SkinThickness">SkinThickness:</label-->
+        <input type="number" id="SkinThickness" name="SkinThickness" placeholder="Enter your SkinThickness Level" required>
+
+
+        <!--label for="Insulin">Insulin:</label-->
+        <input type="number" id="Insulin" name="Insulin" placeholder="Enter your Insulin Level" required>
+
+        <!--label for="BMI"> BMI:</label-->
+        <input type="number" id="BMI" name="BMI" placeholder="Enter your BMI Level" required>
+
+
+        <!--label for="DiabetespedigreeFunction">DiabetespedigreeFunction:</label-->
+        <input type="number" id="DiabetespedigreeFunction" name="DiabetespedigreeFunction" placeholder="Enter your DiabetespedigreeFunction" required>
+
+
+        <!--label for="Age">Age:</label-->
+        <input type="number" id="Age" name="Age" placeholder="Enter your Age" required>
+
+
+        <button type="submit">Predict</button>
+    </form>
+
+    
+</body>
+</html>
